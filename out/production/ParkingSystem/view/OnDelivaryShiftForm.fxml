@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="inParkContext" prefHeight="475.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OnDelivaryShiftFormController">
+   <children>
+      <TableView fx:id="tblDeliverData" layoutX="25.0" layoutY="70.0" prefHeight="398.0" prefWidth="703.0">
+        <columns>
+          <TableColumn fx:id="clVehicleNumber" prefWidth="163.0" text="Vehicle NUmber" />
+          <TableColumn fx:id="clVehicleType" prefWidth="147.0" text="Vehicle Type" />
+            <TableColumn fx:id="clDriverName" prefWidth="208.0" text="Drivar Name" />
+            <TableColumn fx:id="clLeftTime" prefWidth="184.0" text="Left Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="deleteDriverContext" prefHeight="436.0" prefWidth="600.0" style="-fx-background-color: #ffeaa7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteDriverController">
+   <children>
+      <Label alignment="CENTER" layoutX="112.0" layoutY="14.0" prefHeight="93.0" prefWidth="329.0" text="Delete Driver">
+         <font>
+            <Font name="Kristen ITC" size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9563106796116505" endY="1.0" startX="0.5631067961165048" startY="0.6553398058252428">
+               <stops>
+                  <Stop color="#b50303" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="8.0" layoutY="135.0" prefHeight="33.0" prefWidth="172.0" text="Select NIC Number : ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="8.0" layoutY="172.0" prefHeight="33.0" prefWidth="172.0" text="Driver Name : ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="7.0" layoutY="216.0" prefHeight="33.0" prefWidth="172.0" text="Diving license No : ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="4.0" layoutY="265.0" prefHeight="33.0" prefWidth="172.0" text="Address : ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="2.0" layoutY="309.0" prefHeight="33.0" prefWidth="172.0" text="Contact Number : ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbSelectNICNumber" layoutX="196.0" layoutY="124.0" onAction="#showDataOnAction" prefHeight="31.0" prefWidth="267.0" />
+      <Label fx:id="lblDriverName" layoutX="194.0" layoutY="174.0" prefHeight="31.0" prefWidth="278.0" />
+      <Label fx:id="lblLicenseNo" layoutX="191.0" layoutY="217.0" prefHeight="31.0" prefWidth="278.0" />
+      <Label fx:id="lblAddress" layoutX="191.0" layoutY="266.0" prefHeight="31.0" prefWidth="278.0" />
+      <Label fx:id="lblContactNumber" layoutX="189.0" layoutY="311.0" prefHeight="31.0" prefWidth="278.0" />
+      <JFXButton layoutX="356.0" layoutY="367.0" onAction="#deleteDriver" prefHeight="45.0" prefWidth="112.0" style="-fx-background-color: #ff3f34;" text="Conforme">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="82.0" layoutY="367.0" onAction="#backOnAction" prefHeight="45.0" prefWidth="112.0" style="-fx-background-color: #808e9b;" text="&lt;--Back">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

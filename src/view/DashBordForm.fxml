@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBordContext" prefHeight="627.0" prefWidth="865.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBordFormController">
+   <children>
+      <ComboBox fx:id="cmbSelectVehicle" layoutX="145.0" layoutY="101.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#selectNumber" prefHeight="46.0" prefWidth="317.0" style="-fx-background-radius: 50; -fx-border-radius: 50;" styleClass="comboBox-one">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Label layoutX="21.0" layoutY="110.0" prefHeight="21.0" prefWidth="111.0" text="Select Vehicle" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="23.0" layoutY="190.0" prefHeight="31.0" prefWidth="111.0" text="Vehicle Type" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblDriver" layoutX="65.0" layoutY="265.0" prefHeight="21.0" prefWidth="46.0" text="Driver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblAnswer" alignment="CENTER" layoutX="145.0" layoutY="180.0" prefHeight="46.0" prefWidth="317.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #d2dae2;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbSelectDriver" layoutX="145.0" layoutY="254.0" prefHeight="46.0" prefWidth="317.0" style="-fx-background-radius: 50; -fx-border-radius: 50;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Label fx:id="lblDiisplaySlotNumber" alignment="CENTER" layoutX="109.0" layoutY="373.0" prefHeight="149.0" prefWidth="309.0" style="-fx-background-color: #dcdde1; -fx-background-radius: 50; -fx-border-radius: 50;" text="0">
+         <font>
+            <Font name="System Bold" size="65.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNameSlot" alignment="CENTER" layoutX="120.0" layoutY="380.0" prefHeight="40.0" prefWidth="288.0" style="-fx-background-color: #dcdde1; -fx-background-radius: 50; -fx-border-radius: 50;" text="Your Parking Slot Number">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnParkVehicle" alignment="CENTER" buttonType="RAISED" layoutX="568.0" layoutY="189.0" onAction="#btnParkOnAction" prefHeight="62.0" prefWidth="246.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #ffeaa7; -fx-border-color: black; -fx-border-insets: 10;" text="Park Vehicle">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnOnDiliveryShift" buttonType="RAISED" layoutX="568.0" layoutY="277.0" onAction="#btnOnDiliveryShiftOnAction" prefHeight="62.0" prefWidth="246.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #b8e994; -fx-border-insets: 10; -fx-border-color: black;" text="On Dilivery Shift">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnManageLogin" layoutX="552.0" layoutY="441.0" onAction="#btnLogin" prefHeight="44.0" prefWidth="288.0" style="-fx-border-radius: 25; -fx-background-radius: 25; -fx-background-color: #596275; -fx-border-color: white;" text="Management Log In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblDateTime" alignment="CENTER" layoutX="573.0" layoutY="83.0" prefHeight="83.0" prefWidth="246.0" style="-fx-background-color: white; -fx-border-radius: 50; -fx-background-radius: 50;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

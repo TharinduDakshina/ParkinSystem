@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="inParkingContext" prefHeight="674.0" prefWidth="815.0" style="-fx-background-color: #f7f1e3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InParkingFormController">
+   <children>
+      <ComboBox fx:id="cmbTypeDetails" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="195.0" promptText="In Parking">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Button fx:id="btnAddVehicle" layoutX="190.0" layoutY="109.0" mnemonicParsing="false" onAction="#addVehicle" prefHeight="35.0" prefWidth="179.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;" text="Update Vehicle LIst">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddDriver" layoutX="429.0" layoutY="109.0" mnemonicParsing="false" onAction="#addDriver" prefHeight="35.0" prefWidth="179.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;" text="Update Driver List">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="656.0" layoutY="106.0" mnemonicParsing="false" onAction="#logOut" prefHeight="35.0" prefWidth="106.0" style="-fx-background-color: #ff5252; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;" text="LogOut">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane fx:id="inParkContext" layoutX="13.0" layoutY="162.0" prefHeight="501.0" prefWidth="790.0">
+         <children>
+            <ImageView fitHeight="493.0" fitWidth="640.0" layoutX="176.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/Login-Form-Design-By-HTML-CSS-101-8.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
